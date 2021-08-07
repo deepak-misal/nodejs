@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Call Back Button
+        </title>
+    </head> 
+    <body>
+        <button id="button">Click Me</button>
+        <script>
+            function god(){
+                console.log("God");
+            }
+            function devil(){
+                console.log("devil");
+            }
+            var btn=document.getElementById("button");
+            btn.addEventListener('click',god);
+            btn.addEventListener('click',devil);
+
+        </script>
+    </body>
+</html>

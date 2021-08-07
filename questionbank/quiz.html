@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper</title>
+    <style>
+        #btnList button {
+            border-radius: 50%;
+            padding: 10px;
+            margin: 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Maths Quiz</h1>
+    <button id="start">Start</button>
+
+    <p type="text" id="question" name="question"></p>
+    <div id="quiz">
+    <form>
+        <input type="radio" id="value1" name="value" value="value1">
+        <label id="option1"></label><br>
+        <input type="radio" id="value2" name="value" value="value2">
+        <label id="option2"></label><br>
+        <input type="radio" id="value3" name="value" value="value3">
+        <label id="option3"></label><br>
+        <input type="radio" id="value4" name="value" value="value4">
+        <label id="option4"></label><br><br>
+    </form>
+</div>
+    <button id="next">Next</button>
+    <h1 id="marks"></h1>
+    <button id="reload">Start again</button>
+    <script src="quiz.js"></script>
+</body>
+
+
+</html>

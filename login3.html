@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+    </head>
+    <body>
+        <form action="authenticate.php" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password"><br><br>
+            <button type="submit">Submit using GET</button>
+        </form>
+        <script>
+            function validateForm(){
+                var name= document.querySelector("#username");
+                if(name.value==""){
+                    alert("Insert username")
+                    return false;
+                }
+                var pass=document.querySelector("#password");
+                if(pass.value==""){
+                    alert("Insert Password")
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

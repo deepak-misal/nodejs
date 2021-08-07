@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Toggle image</title>
+    </head>
+    <body>
+        <script>
+            var visible="visible";
+            function hideImage(){
+                var img=document.getElementById('pic')
+                // if(visible=="visible"){
+                //     img.style.visibility="hidden";
+                //     visible="hidden";
+                // }
+                // else if(visible=="hidden"){
+                //     img.style.visibility="visible";
+                //     visible="visible";
+                // }
+                img.style.visibility=(img.style.visibility=='visible')?'hidden':'visible';
+            }
+        </script>
+        <h1>Image Toggler</h1>
+        <img src="itachi.jpg" style="width:400px;height:400px;" id="pic"><br><br>
+        <button onclick=hideImage()>Toggler</button>
+
+    </body>
+</html>

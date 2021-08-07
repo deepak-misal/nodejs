@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Color Button </title>
+    </head>
+    <body>
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        
+        <script>
+            function red(){
+                document.body.style.backgroundColor="red";
+            }
+            function blue(){
+                document.body.style.backgroundColor="blue";
+            }
+            var blueButton=document.getElementById("blue");
+            var redButton=document.getElementById("red");
+
+            blueButton.addEventListener('click',eventHandler);
+            redButton.addEventListener('click',eventHandler);
+
+            function eventHandler(){
+                var btId=event.target.id;
+                btId=="red"?red():blue();
+                
+            }
+
+        </script>
+    </body>
+</html>

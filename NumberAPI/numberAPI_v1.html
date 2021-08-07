@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Number API</title>
+    </head>
+    <body>
+        <h1>Number API Client</h1>
+        <label>Enter a Number:</label>
+        <input type="number" id="numberInput">
+        <button onclick="getXhr()">Get Facts</button>
+        <p id="text"></p>
+        <script>
+            function getXhr(){
+            console.log("start")
+            var num=document.getElementById("numberInput").value;
+            var output;
+            var xhr=new XMLHttpRequest()
+            xhr.addEventListener("load",function(){
+                console.log(xhr.responseText)
+                output=xhr.responseText;
+                document.getElementById("text").innerHTML=output;
+            })
+            xhr.open("GET","http://numbersapi.com/"+num)
+            xhr.send();
+        
+            console.log("end")
+        }
+        </script>
+
+    </body>
+</html>
